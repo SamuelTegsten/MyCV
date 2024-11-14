@@ -99,11 +99,11 @@ let areaCv = document.getElementById('area-cv')
 
 // Html2pdf options
 let opt = {
-    margin:       0,
+    margin:      [0,0,-100,0] ,
     filename:     'SamuelResume.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 4 },
-    jsPDF:        { format: 'a4', orientation: 'portrait' }
+    jsPDF:        { format: 'a3', orientation: 'portrait' }
 }
 
 // Function to call areaCv and Html2Pdf options 
